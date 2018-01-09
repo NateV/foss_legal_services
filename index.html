@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Open Source in Legal Services</title>
+		<title>Open and Collaborative Methods of Legal Services Program Administration in the Age of Automation</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -25,9 +25,22 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					Open and Collaborative Methods of Legal Services Program Administration in the Age of Automation
+					<h2>Open and Collaborative Methods of Legal Services Program Administration in the Age of Automation</h2>
+					<h4>Innovations in Technology Conference<br>New Orleans, January 2018</h4>
+					<div style="float: left">
+						<a target="cls" href="https://clsphila.org"><img class="plain" style="height: 200px; background: none;" src="assets/CLS-logo.png"></a>
+					</div>
+					<div style="float: right">
+						<a target="pla" href="https://philalegal.org"><img class="plain" style="height: 200px; background: none;" src="assets/PLA-logo.png"></a>
+					</div>
 				</section>
-				<section>Hi.</section>
+				<section>
+					<h3>The presenters</h3>
+					<ul>
+						<li>Nathan Vogel, Director of Law and Technology, <a target="cls" href="https://clsphila.org">Community Legal Services</a><br><small>GitHub username: <a target="github" href="https://github.com/NateV">NateV</a></small></li>
+						<li>Jonathan Pyle, Contract Performance Officer, <a target="pla" href="https://philalegal.org">Philadelphia Legal Assistance</a><br><small>GitHub username: <a target="github" href="https://github.com/jpylephilalegal">jpylephilalegal</a></small></li>
+					</ul>
+				</section>
 				<section>
 					<section>
 							<ul style="list-style:none;">
@@ -43,64 +56,73 @@
 					<section>Not just code</section>
 				</section>
 				<section>
-					<section>Behavior Driven Development</section>
-					<section>Concepts</section>
-					<section>Example</section>
-				</section>
-				<section>
-					Ongoing Testing
-				</section>
-				<section>
-					<section>Reproducible Fancy Reporting</section>
+					<section>Reproducible Fancy Reporting with <em>R</em></section>
 					<section> <img src="https://www.r-project.org/logo/Rlogo.png" width=150px height=150px alt="R"> </section>
 					<section> RStudio </section>
 					<section> Knit a report with R and RStudio </section>
 				</section>
 				<section>
-					<section> Developing Open Source code projects </section>
-					<section> <img src="https://git-scm.com/images/logos/1color-darkbg@2x.png" alt="git"> </section>
+					<section>Reproducible Fancy Reporting with <em>Python</em></section>
 					<section>
-						<ul style="list-style:none;">
-							<li> <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" height=100px alt="github"> </li>
-							<li> <img src="https://www.atlassian.com/dam/jcr:e2a6f06f-b3d5-4002-aed3-73539c56a2eb/Bitbucket@2x-blue.png" height=100px alt="bitbucket"></li>
-							<li> <img src="https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/wordmark/wm_no_bg.png" height=100px alt="gitlab"></li>
-						</ul>
+						<h3>Using Python</h3>
+						<img class="plain" src="assets/python-for-data-analysis.jpg">
 					</section>
 					<section>
-						<ul>
-							<li> Transparency </li>
-							<li> Reproduceability </li>
-							<li> Collaboration </li>
-						</ul>
+						<h3>Using Jupyter Notebooks</h3>
+						<a target="jupyter" href="http://localhost:8888"><img src="assets/jupyter.png"></a>
 					</section>
 					<section>
-						A good baseline repository structure
-						<pre>
-							<code data-trim>
-								project-root
-								|
-								|- .git/
-								|- .gitignore
-								|- README.md
-								|- docs/
-								|- tests/
-								|- project-code/
-							</code>
-						</pre>
+						<h3>Behavior Driven Development</h3>
+						<h4>and automated testing</h4>
 					</section>
-				</section>
-				<section>
-					<table>
-						<tr>
-							<td style="text-align:center;"> <img src="https://avatars3.githubusercontent.com/u/1690089?s=460&v=4" height=150px width=150px> </td>
-							<td style="text-align:center;"> <img src="https://avatars1.githubusercontent.com/u/25371864?s=460&v=4" height=150px width=150x> </td>
-						</tr>
-						<tr>
-							<td style="text-align:center;"> <div> Nate Vogel </div> <div> nvogel@clsphila.org </div> </td>
-							<td style="text-align:center;"> <div> Jonathan Pyle </div> <div> jpyle@philalegal.org </div> </td>
-						</tr>
-					</table>
-				</section>
+
+					<section>
+						<section>
+							<h3>Version Control Systems</h3>
+							<p><em>Why use them?</em></p>
+							<ul>
+								<li class="fragment">Peace of mind</li>
+								<li class="fragment">Transparency</li>
+								<li class="fragment">Reproducibility</li>
+								<li class="fragment">Collaboration</li>
+							</ul>
+						</section>
+						<section> <img src="https://git-scm.com/images/logos/1color-darkbg@2x.png" alt="git"> </section>
+						<section>
+							<ul style="list-style:none;">
+								<li> <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" height=100px alt="github"> </li>
+								<li> <img src="https://www.atlassian.com/dam/jcr:e2a6f06f-b3d5-4002-aed3-73539c56a2eb/Bitbucket@2x-blue.png" height=100px alt="bitbucket"></li>
+								<li> <img src="https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/wordmark/wm_no_bg.png" height=100px alt="gitlab"></li>
+							</ul>
+						</section>
+						<section>
+							A good baseline repository structure
+							<pre>
+								<code data-trim>
+									project-root
+									|
+									|- .git/
+									|- .gitignore
+									|- README.md
+									|- docs/
+									|- tests/
+									|- project-code/
+								</code>
+							</pre>
+						</section>
+					</section>
+					<section>
+						<table>
+							<tr>
+								<td style="text-align:center;"> <img src="https://avatars3.githubusercontent.com/u/1690089?s=460&v=4" height=150px width=150px> </td>
+								<td style="text-align:center;"> <img src="https://avatars1.githubusercontent.com/u/25371864?s=460&v=4" height=150px width=150x> </td>
+							</tr>
+							<tr>
+								<td style="text-align:center;"> <div> Nate Vogel </div> <div> nvogel@clsphila.org </div> </td>
+								<td style="text-align:center;"> <div> Jonathan Pyle </div> <div> jpyle@philalegal.org </div> </td>
+							</tr>
+						</table>
+					</section>
 			</div>
 		</div>
 
