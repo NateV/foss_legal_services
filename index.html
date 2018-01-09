@@ -23,87 +23,158 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<div class="slides">
-				<section>
-					Open and Collaborative Methods of Legal Services Program Administration in the Age of Automation
-				</section>
-				<section>Hi.</section>
-				<section>
-					<section>
-							<ul style="list-style:none;">
-								<li><span style="color: #f47d42; font-size: 2em">F</span>ree</li>
-								<li><span style="color: #f47d42; font-size: 2em">O</span>pen</li>
-								<li><span style="color: #f47d42; font-size: 2em">S</span>ource</li>
-								<li><span style="color: #f47d42; font-size: 2em">S</span>oftware</li>
-							</ul>
-					</section>
-					<section>Why <span style="#f47d42;">FOSS</span> in Legal Services?</section>
-					<section>Free stuff</section>
-					<section>Shared Commons</section>
-					<section>Not just code</section>
-				</section>
-				<section>
-					<section>Behavior Driven Development</section>
-					<section>Concepts</section>
-					<section>Example</section>
-				</section>
-				<section>
-					Ongoing Testing
-				</section>
-				<section>
-					<section>Reproducible Fancy Reporting</section>
-					<section> <img src="https://www.r-project.org/logo/Rlogo.png" width=150px height=150px alt="R"> </section>
-					<section> RStudio </section>
-					<section> Knit a report with R and RStudio </section>
-				</section>
-				<section>
-					<section> Developing Open Source code projects </section>
-					<section> <img src="https://git-scm.com/images/logos/1color-darkbg@2x.png" alt="git"> </section>
-					<section>
-						<ul style="list-style:none;">
-							<li> <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" height=100px alt="github"> </li>
-							<li> <img src="https://www.atlassian.com/dam/jcr:e2a6f06f-b3d5-4002-aed3-73539c56a2eb/Bitbucket@2x-blue.png" height=100px alt="bitbucket"></li>
-							<li> <img src="https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/wordmark/wm_no_bg.png" height=100px alt="gitlab"></li>
-						</ul>
-					</section>
-					<section>
-						<ul>
-							<li> Transparency </li>
-							<li> Reproduceability </li>
-							<li> Collaboration </li>
-						</ul>
-					</section>
-					<section>
-						A good baseline repository structure
-						<pre>
-							<code data-trim>
-								project-root
-								|
-								|- .git/
-								|- .gitignore
-								|- README.md
-								|- docs/
-								|- tests/
-								|- project-code/
-							</code>
-						</pre>
-					</section>
-				</section>
-				<section>
-					<table>
-						<tr>
-							<td style="text-align:center;"> <img src="https://avatars3.githubusercontent.com/u/1690089?s=460&v=4" height=150px width=150px> </td>
-							<td style="text-align:center;"> <img src="https://avatars1.githubusercontent.com/u/25371864?s=460&v=4" height=150px width=150x> </td>
-						</tr>
-						<tr>
-							<td style="text-align:center;"> <div> Nate Vogel </div> <div> nvogel@clsphila.org </div> </td>
-							<td style="text-align:center;"> <div> Jonathan Pyle </div> <div> jpyle@philalegal.org </div> </td>
-						</tr>
-					</table>
-				</section>
-			</div>
+		  <div class="slides">
+		    <section>
+                      <h2>Open and Collaborative Methods of Legal Services Program Administration in the Age of Automation</h2>
+                      <h4>Innovations in Technology Conference<br>New Orleans, January 2018</h4>
+                      <div style="float: left">
+                        <a target="cls" href="https://clsphila.org"><img class="plain" style="height: 200px; background: none;" src="assets/CLS-logo.png"></a>
+                      </div>
+                      <div style="float: right">
+                        <a target="pla" href="https://philalegal.org"><img class="plain" style="height: 200px; background: none;" src="assets/PLA-logo.png"></a>
+                      </div>
+                    </section>
+		    <section>Hi.</section>
+		    <section>
+		      <section>
+			<ul style="list-style:none;">
+			  <li><span style="color: #f47d42; font-size: 2em">F</span>ree</li>
+			  <li><span style="color: #f47d42; font-size: 2em">O</span>pen</li>
+			  <li><span style="color: #f47d42; font-size: 2em">S</span>ource</li>
+			  <li><span style="color: #f47d42; font-size: 2em">S</span>oftware</li>
+			</ul>
+		      </section>
+		      <section>Why <span style="#f47d42;">FOSS</span> in Legal Services?</section>
+		      <section>Free stuff</section>
+		      <section>Shared Commons</section>
+		      <section>Not just code</section>
+		    </section>
+                    <section>
+                      <section>
+                        <h3>Behavior Driven Development (BDD)</h3>
+                        <p><em>Basic concepts</em></p>
+                        <ul>
+                          <li class="fragment">Merges specification of requirements with validation testing</li>
+                          <li class="fragment">Includes non-techies in the development process</li>
+                          <li class="fragment">Makes non-techies more responsible</li>
+                          <li class="fragment">Provides iterative process for developing system and ensuring validity</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h3>Testing</h3>
+                        <p><em>Why is it important?</em></p>
+                        <ul>
+                          <li class="fragment">Does the system do what it should?</li>
+                          <li class="fragment">Can it handle unusual situations?</li>
+                          <li class="fragment">It might work now, but if it breaks, will you know?</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h3>Cucumber</h3>
+                      </section>
+                      <section>
+                        <h3>Lettuce</h3>
+                      </section>
+                      <section>
+                        <h3>Example #1</h3>
+                        <p>On-line intake system for pro bono divorce clinic</p>
+                      </section>
+                      <section>
+                        <h3>Example #2</h3>
+                        <p>Automating processes in Legal Server</p>
+                      </section>
+		      <section>
+		        Ongoing Testing
+		      </section>
+                    </section>
+                    <section>
+                      <section>
+                        <h3>Reproducible Research</h3>
+                        <p><em>Concepts</em></p>
+                        <ul>
+                          <li class="fragment">Put final report, process, and data all in one document</li>
+                          <li class="fragment">Transparency</li>
+                          <li class="fragment">Reproducibility</li>
+                          <li class="fragment">Accountability</li>
+                        </ul>
+                      </section>
+		      <section>Reproducible Fancy Reporting</section>
+		      <section> <img class="plain" style="background: none" src="https://www.r-project.org/logo/Rlogo.png" alt="R"> </section>
+		      <section> <img class="plain" style="background: none; height: 300px;" src="https://www.rstudio.com/wp-content/uploads/2016/09/RStudio-Logo-Blue-Gray-250.png"> </section>
+		      <section> Knit a report with R and RStudio </section>
+                      <section>
+                        <h3>Using R</h3>
+                        <img class="plain" src="assets/learning-r.jpg">
+                      </section>
+                      <section>
+                        <h3>Using Python</h3>
+                        <img class="plain" src="assets/python-for-data-analysis.jpg">
+                      </section>
+                      <section>
+                        <h3>Using Jupyter Notebooks</h3>
+                        <a target="jupyter" href="http://localhost:8888"><img src="assets/jupyter.png"></a>
+                      </section>
+		    </section>
+                    <section>
+                      <section>
+                        <h3>Version Control Systems</h3>
+                        <p><em>Why use them?</em></p>
+                        <ul>
+                          <li class="fragment">Peace of mind</li>
+                          <li class="fragment">Transparency</li>
+                          <li class="fragment">Reproducibility</li>
+                          <li class="fragment">Collaboration</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h3>MediaWiki</h3>
+                        <a target="wiki" href="https://wiki.philalegal.org"><img src="assets/mediawiki.png"></a>
+                      </section>
+		      <section>
+                        <img class="plain" style="background: none; padding: 20px; border-radius: 50px;" src="https://git-scm.com/images/logos/1color-darkbg@2x.png" alt="git">
+                      </section>
+                      <section>
+                        <h3>How to share your stuff with version control</h3>
+		        <ul style="list-style:none;">
+                          <li class="fragment"><img class="plain" style="height: 100px; background: #ccc; padding: 20px; border-radius: 50px;" src="assets/github-logo.png"></li>
+			  <li class="fragment"><img class="plain" style="height: 75px; background: #ccc; padding: 20px; border-radius: 50px;" src="https://www.atlassian.com/dam/jcr:e2a6f06f-b3d5-4002-aed3-73539c56a2eb/Bitbucket@2x-blue.png" alt="bitbucket"></li>
+			  <li class="fragment"><img class="plain" style="height: 100px; background: #ccc; padding: 20px; border-radius: 50px;" src="https://gitlab.com/gitlab-com/gitlab-artwork/raw/master/wordmark/wm_no_bg.png" height=100px alt="gitlab"></li>
+		        </ul>
+                      </section>
+		      <section>
+		        Best practice repository structure
+		        <pre>
+			  <code data-trim>
+			    project-root
+			    |
+			    |- .git/
+			    |- .gitignore
+			    |- README.md
+			    |- docs/
+			    |- tests/
+			    |- project-files/
+			  </code>
+		        </pre>
+		      </section>
+                    </section>
+                    <section>
+                      <h3>The presenters</h3>
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td style="text-align:center;"><img class="plain" src="https://avatars3.githubusercontent.com/u/1690089?s=460&v=4" height=150px width=150px></td>
+                            <td style="text-align:center;"><img class="plain" src="https://avatars1.githubusercontent.com/u/25371864?s=460&v=4" height=150px width=150x></td>
+                          </tr>
+                          <tr>
+                          <tr>
+                            <td style="text-align:center;">Nathan Vogel<br><small>Director of Law and Technology</small><br><a target="cls" href="https://clsphila.org">Community Legal Services</a><br><small>GitHub username: <a target="github" href="https://github.com/NateV">NateV</a></small><br>nvogel@clsphila.org</td>
+                            <td style="text-align:center;">Jonathan Pyle<br><small>Contract Performance Officer</small><br><a target="pla" href="https://philalegal.org">Philadelphia Legal Assistance</a><br><small>GitHub username: <a target="github" href="https://github.com/jpylephilalegal">jpylephilalegal</a></small><br>jpyle@philalegal.org</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+		  </div>
 		</div>
-
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
